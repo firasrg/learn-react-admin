@@ -1,4 +1,4 @@
-import { EmailField, Show, SimpleShowLayout, TextField } from 'react-admin';
+import { EmailField, Show, SimpleShowLayout, TextField } from "react-admin";
 
 export const UserShow = () => (
     <Show>

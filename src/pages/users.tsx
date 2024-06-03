@@ -1,4 +1,4 @@
-import {Datagrid, EmailField, List, SimpleList, TextField} from 'react-admin';
+import { Datagrid, EmailField, List, SimpleList, TextField } from "react-admin";
 import { useMediaQuery, Theme } from "@mui/material";
 import UrlField from "../components/UrlField";
 
@@ -26,4 +26,4 @@ export const UserList = () => {
             )}
         </List>
     );
-}
+};

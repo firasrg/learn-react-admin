@@ -12,14 +12,12 @@ export const authProvider: AuthProvider = {
     checkError: ({ status }: { status: number }) => {
         if (status === 401 || status === 403) {
             localStorage.removeItem("username");
-            return Promise.reject();
+            return Promise.reject(new Error());
         }
         return Promise.resolve();
     },
     checkAuth: () => {
-        return localStorage.getItem("username")
-            ? Promise.resolve()
-            : Promise.reject();
+        return localStorage.getItem("username") ? Promise.resolve() : Promise.reject(new Error());
     },
     getPermissions: () => Promise.resolve(),
 };
