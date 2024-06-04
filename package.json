@@ -28,6 +28,7 @@
     "eslint-config-universe": "^13.0.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.5",
+    "msw": "^2.3.1",
     "prettier": "^3.3.0",
     "typescript": "^5.1.6",
     "vite": "^4.3.9"
@@ -71,6 +72,11 @@
       "yarn lint",
       "yarn format",
       "bash -c 'yarn type-check'"
+    ]
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
     ]
   }
 }
